@@ -1,0 +1,1634 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column date using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column date using expression value.toDate()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "date",
+    "expression": "grel:value.split(\" \")[5]",
+    "onError": "keep-original",
+    "newColumnName": "Year",
+    "columnInsertIndex": 8,
+    "description": "Create column Year at index 8 based on column date using expression grel:value.split(\" \")[5]"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fri Apr 10 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fri Apr 10 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fri Mar 27 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fri Mar 27 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fri May 03 00:00:00 PDT 2013"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fri May 03 00:00:00 PST 2013"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mon Apr 06 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mon Apr 06 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mon Mar 09 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mon Mar 09 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mon Mar 11 00:00:00 PDT 2013"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mon Mar 11 00:00:00 PST 2013"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mon May 05 00:00:00 PDT 2014"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mon May 05 00:00:00 PST 2014"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mon May 06 00:00:00 PDT 2013"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mon May 06 00:00:00 PST 2013"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sat Aug 09 00:00:00 PDT 2014"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sat Aug 09 00:00:00 PST 2014"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sat May 04 00:00:00 PDT 2013"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sat May 04 00:00:00 PST 2013"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sat May 16 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sat May 16 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sun Apr 05 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sun Apr 05 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sun May 05 00:00:00 PDT 2013"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sun May 05 00:00:00 PST 2013"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Thu Apr 09 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thu Apr 09 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Thu Apr 23 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thu Apr 23 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Thu Aug 07 00:00:00 PDT 2014"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thu Aug 07 00:00:00 PST 2014"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Thu Mar 26 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thu Mar 26 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Thu May 14 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thu May 14 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tue Apr 07 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tue Apr 07 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tue Apr 21 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tue Apr 21 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tue Aug 05 00:00:00 PDT 2014"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tue Aug 05 00:00:00 PST 2014"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tue May 19 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tue May 19 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tue May 20 00:00:00 PDT 2014"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tue May 20 00:00:00 PST 2014"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tue Oct 28 00:00:00 PDT 2014"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tue Oct 28 00:00:00 PST 2014"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wed Apr 22 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wed Apr 22 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wed Aug 06 00:00:00 PDT 2014"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wed Aug 06 00:00:00 PST 2014"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wed Mar 25 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wed Mar 25 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wed May 06 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wed May 06 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wed May 20 00:00:00 PDT 2015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wed May 20 00:00:00 PST 2015"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wed May 21 00:00:00 PDT 2014"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wed May 21 00:00:00 PST 2014"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wed Oct 29 00:00:00 PDT 2014"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wed Oct 29 00:00:00 PST 2014"
+      }
+    ],
+    "description": "Mass edit cells in column date"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "date",
+    "expression": "grel:toString(toDate(value),\"yyyy-MM-dd\")",
+    "onError": "set-to-blank",
+    "newColumnName": "Date",
+    "columnInsertIndex": 8,
+    "description": "Create column Date at index 8 based on column date using expression grel:toString(toDate(value),\"yyyy-MM-dd\")"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "date",
+    "description": "Remove column date"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sex",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column sex using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Specimen_ID",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Specimen_ID using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Genus",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Genus using expression value.trim()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Species",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "sp."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column Species"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "order",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column order using expression value.trim()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column",
+    "description": "Remove column Column"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "elevation",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "400-440"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "400"
+      }
+    ],
+    "description": "Mass edit cells in column elevation"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "elevation",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "200-225"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "200"
+      }
+    ],
+    "description": "Mass edit cells in column elevation"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "elevation",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "200"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": 200
+      }
+    ],
+    "description": "Mass edit cells in column elevation"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "elevation",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "400"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": 400
+      }
+    ],
+    "description": "Mass edit cells in column elevation"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Longitude",
+    "description": "Remove column Longitude"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Latitude",
+    "description": "Remove column Latitude"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "lice_total",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ">50"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "50"
+      }
+    ],
+    "description": "Mass edit cells in column lice_total"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "lice_total",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ">100"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "100"
+      }
+    ],
+    "description": "Mass edit cells in column lice_total"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "feather_mites_total",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "more 10"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "10"
+      }
+    ],
+    "description": "Mass edit cells in column feather_mites_total"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "feather_mites_total",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "FEW"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column feather_mites_total"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "feather_mites_total",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "MaNY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column feather_mites_total"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "feather_mites_total",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ">5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5"
+      }
+    ],
+    "description": "Mass edit cells in column feather_mites_total"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "feather_mites_total",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column feather_mites_total using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "lice_total",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column lice_total using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ectoparasites_box",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "E1,J2;P2,F2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "E1,J2,P2,F2"
+      }
+    ],
+    "description": "Mass edit cells in column ectoparasites_box"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ectoparasites_box",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "E1,J8;P2,H4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "E1,J8,P2,H4"
+      }
+    ],
+    "description": "Mass edit cells in column ectoparasites_box"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ectoparasites_box",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "E3,40; E3,41"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "E3,40,E3,41"
+      }
+    ],
+    "description": "Mass edit cells in column ectoparasites_box"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ectoparasites_box",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "P2,F10 (P2,B11)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "P2,F10,P2,B11"
+      }
+    ],
+    "description": "Mass edit cells in column ectoparasites_box"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ectoparasites_box",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "P2,G2;P2,J4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "P2,G2,P2,J4"
+      }
+    ],
+    "description": "Mass edit cells in column ectoparasites_box"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ectoparasites_box",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "P2,a6;E1,H5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "P2,a6,E1,H5"
+      }
+    ],
+    "description": "Mass edit cells in column ectoparasites_box"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ectoparasites_box",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "E3,59: E3,60"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "E3,59,E3,60"
+      }
+    ],
+    "description": "Mass edit cells in column ectoparasites_box"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ectoparasites_box",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "P2,a6,E1,H5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "P2,A6,E1,H5"
+      }
+    ],
+    "description": "Mass edit cells in column ectoparasites_box"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Specimen_ID",
+    "expression": "grel:row.index + 1",
+    "onError": "set-to-blank",
+    "newColumnName": "SpecimenID",
+    "columnInsertIndex": 2,
+    "description": "Create column SpecimenID at index 2 based on column Specimen_ID using expression grel:row.index + 1"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Specimen_ID",
+    "newColumnName": "Old_specimen_ID",
+    "description": "Rename column Specimen_ID to Old_specimen_ID"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Locality",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "Locality_ID",
+    "columnInsertIndex": 14,
+    "description": "Create column Locality_ID at index 14 based on column Locality using expression grel:value"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Locality_ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Puerto Gaitan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column Locality_ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Locality_ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tatama"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2"
+      }
+    ],
+    "description": "Mass edit cells in column Locality_ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Locality_ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Villavicencio"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3"
+      }
+    ],
+    "description": "Mass edit cells in column Locality_ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Locality_ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Medina"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4"
+      }
+    ],
+    "description": "Mass edit cells in column Locality_ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Locality_ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Jose del Guaviare"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5"
+      }
+    ],
+    "description": "Mass edit cells in column Locality_ID"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ectoparasites_box",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ectoparasites_box using expression value.toUppercase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ectoparasites_box",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column ectoparasites_box"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ectoparasites_box",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "Ecto_box_key",
+    "columnInsertIndex": 20,
+    "description": "Create column Ecto_box_key at index 20 based on column ectoparasites_box using expression grel:value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Ecto_box_key",
+    "description": "Remove column Ecto_box_key"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "elevation",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column elevation"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "elevation",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "Elevation_key",
+    "columnInsertIndex": 16,
+    "description": "Create column Elevation_key at index 16 based on column elevation using expression grel:value"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Elevation_key",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "141"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column Elevation_key"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Elevation_key",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "400"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2"
+      }
+    ],
+    "description": "Mass edit cells in column Elevation_key"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Elevation_key",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "200"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3"
+      }
+    ],
+    "description": "Mass edit cells in column Elevation_key"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Elevation_key",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "584"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4"
+      }
+    ],
+    "description": "Mass edit cells in column Elevation_key"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Elevation_key",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1400"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5"
+      }
+    ],
+    "description": "Mass edit cells in column Elevation_key"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Elevation_key",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1500"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "6"
+      }
+    ],
+    "description": "Mass edit cells in column Elevation_key"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Elevation_key",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1600"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "7"
+      }
+    ],
+    "description": "Mass edit cells in column Elevation_key"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Elevation_key",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2300"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "8"
+      }
+    ],
+    "description": "Mass edit cells in column Elevation_key"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Elevation_key",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2400"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "9"
+      }
+    ],
+    "description": "Mass edit cells in column Elevation_key"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Elevation_key",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2500"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "10"
+      }
+    ],
+    "description": "Mass edit cells in column Elevation_key"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Elevation_key",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "11"
+      }
+    ],
+    "description": "Mass edit cells in column Elevation_key"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Elevation_key",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Elevation_key using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Locality_ID",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Locality_ID using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Departament",
+    "newColumnName": "Department",
+    "description": "Rename column Departament to Department"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "mass (g)",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column mass (g)"
+  }
+]

@@ -1,0 +1,36 @@
+###Database Assignment
+
+# I first cleaned up the data in OpenRefine. The new dataset is attached along with the asociated JSON file. 
+
+# I chose to create three tables in my database. 
+# Table 1 Specimen = most of the columns of data
+# Table 2 Location = the localities etc. 
+# Table 3 Elevation = elevation data and related keys
+# each table share at least one primary key. 
+
+#Here is partial code for the creation of Table 1:
+
+CREATE TABLE "Specimen" (
+	"SpecimenID"	INTEGER,
+	"Genus"	TEXT,
+	"Species"	TEXT,
+	PRIMARY KEY("SpecimenID")
+);
+
+#Here is partial code for the creation of Table 2:
+
+CREATE TABLE "Elevation" (
+	"SpecimenID"	INTEGER,
+	"Elevation_key"	INTEGER,
+	"elevation"	INTEGER,
+	PRIMARY KEY("SpecimenID")
+	PRIMARY KEY("Elevation_key")
+);
+
+#Code for one query that searches across two tables for 
+
+SELECT Specimen.SpecimenID, Genus, Species, elevation, Locality
+FROM Specimen
+LEFT OUTER JOIN Elevation_t, Location
+ON Specimen.SpecimenID = Elevation_t.SpecimenID = Location.SpecimenID
+WHERE elevation > 500
